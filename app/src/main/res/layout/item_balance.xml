@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x122"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x40"
+    android:paddingRight="@dimen/x30"
+    android:paddingTop="@dimen/x30">
+
+    <TextView
+        android:id="@+id/balance_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/balance_consume"
+        android:textColor="@color/gray_333333"
+        android:textSize="@dimen/x30"
+        android:maxLines="1"
+        android:maxWidth="@dimen/x358"/>
+    <TextView
+        android:id="@+id/balance_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance_type"
+        android:textSize="@dimen/x17"
+        android:textColor="@color/gray_999999"
+        android:layout_marginTop="@dimen/x20"
+        android:maxLines="1"
+        android:maxWidth="@dimen/x358"
+        android:text="2017-06-06 19:00:12:00"
+        />
+    <TextView
+        android:id="@+id/balance_monkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:maxWidth="@dimen/x358"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/x24"
+        android:textColor="@color/red_e51728"
+        android:text="-￥50.00"/>
+    <TextView
+        android:id="@+id/balance_serial_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:maxWidth="@dimen/x358"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/balance_monkey"
+        android:layout_marginTop="@dimen/x22"
+        android:textSize="@dimen/x18"
+        android:textColor="@color/gray_a1a1a1"
+        android:text="201706061700123456"/>
+</RelativeLayout>

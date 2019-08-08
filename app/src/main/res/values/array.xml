@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 需要登陆的模块 -->
+    <string-array name="array_need_login_mode">
+        <item>poll.com.zjd.activity.MySettingActivity</item>
+        <item>poll.com.zjd.activity.MyBalanceActivity</item>
+        <item>poll.com.zjd.activity.MyRechargeActivity</item>
+        <item>poll.com.zjd.activity.MyAddressActivity</item>
+        <item>poll.com.zjd.activity.MyAddressEditActivity</item>
+    </string-array>
+
+    <!-- Activity没有动画（代码中会有特殊的动画） -->
+    <string-array name="array_no_anim_enter">
+        <item>cn.sharing8.blood.activity.FirstActivity</item>
+        <item>cn.sharing8.blood.activity.MainActivity</item>
+    </string-array>
+
+    <string-array name="array_no_anim_outer">
+        <item>cn.sharing8.widget.image_show_super.ImageShowActivity</item>
+        <item>cn.sharing8.blood.activity.FirstActivity</item>
+    </string-array>
+
+    <string-array name="array_enter_top_out_buttom_anim">
+        <item>cn.sharing8.blood.activity.ChooseCityActivity</item>
+        <item>cn.sharing8.blood.activity.RegLoginActivity</item>
+        <item>cn.sharing8.blood.activity.BindingCellPhoneActivity</item>
+        <item>cn.sharing8.blood.activity.CommentActivity</item>
+        <item>cn.sharing8.blood.activity.AppointmentReadme</item>
+    </string-array>
+</resources>

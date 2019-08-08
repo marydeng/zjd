@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+        <variable
+            name="item"
+            type="poll.com.zjd.model.GoodsClass" />
+
+        <variable
+            name="index"
+            type="int" />
+
+        <variable
+            name="flag"
+            type="String" />
+
+        <variable
+            name="fragment"
+            type="poll.com.zjd.fragment.ClassFragment"/>
+
+        <variable
+            name="activity"
+            type="poll.com.zjd.activity.BaseActivity"/>
+
+        <import type="android.view.View" />
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@{item.select? @drawable/select_bg : @drawable/oval_grey_square}"
+            android:onClick="@{(view)->fragment.itemClick(view,index)}"
+            android:layout_alignParentTop="true">
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                style="@style/style_default_text"
+                android:text="@{item.keywords}"
+                android:textColor="@{item.select? @color/red_e51728 : @color/gray_333333}"
+                tools:text="哇哈哈哈"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

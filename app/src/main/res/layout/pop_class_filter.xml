@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class=".ClassPopBinding">
+
+
+        <variable
+            name="fragment"
+            type="poll.com.zjd.fragment.ClassFragment" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="48dp"
+            android:orientation="horizontal">
+
+            <View
+                android:onClick="@{(view)->fragment.dismiss(view)}"
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent"
+                android:background="#33000000" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x110">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x30"
+                            android:text="价格区间"
+                            android:textColor="@color/gray_333333"
+                            android:textSize="@dimen/x30" />
+                    </RelativeLayout>
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/x60"-->
+                        <!--android:focusable="true"-->
+                        <!--android:focusableInTouchMode="true"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1">-->
+
+                            <!--<EditText-->
+                                <!--android:layout_width="@dimen/x220"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_centerInParent="true"-->
+                                <!--android:background="@color/bg_f2f2f2"-->
+                                <!--android:gravity="center"-->
+                                <!--android:hint="最低价"-->
+                                <!--android:text="@{fragment.obsminPrice}"-->
+                                <!--android:textColor="@color/gray_333333"-->
+                                <!--android:textColorHint="@color/gray_999999"-->
+                                <!--android:textSize="@dimen/x30" />-->
+                        <!--</RelativeLayout>-->
+
+                        <!--<View-->
+                            <!--android:layout_width="@dimen/x30"-->
+                            <!--android:layout_height="@dimen/x1"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:background="#cccccc" />-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1">-->
+
+                            <!--<EditText-->
+                                <!--android:layout_width="@dimen/x220"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_centerInParent="true"-->
+                                <!--android:background="@color/bg_f2f2f2"-->
+                                <!--android:gravity="center"-->
+                                <!--android:hint="最高价"-->
+                                <!--android:text="@{fragment.obsmaxPrice}"-->
+                                <!--android:textColor="@color/gray_333333"-->
+                                <!--android:textColorHint="@color/gray_999999"-->
+                                <!--android:textSize="@dimen/x30" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+
+                    <poll.com.zjd.view.GridViewNoScroll
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20"
+                        android:horizontalSpacing="@dimen/x18"
+                        android:numColumns="3"
+                        android:paddingLeft="@dimen/x18"
+                        android:paddingRight="@dimen/x18"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/x20"
+                        app:fragment="@{fragment}"
+                        app:itemLayout="@{@layout/adapter_class_popprice}"
+                        app:itemList="@{fragment.priceList}" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x110"
+                        android:layout_marginTop="@dimen/x18">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x30"
+                            android:text="产地"
+                            android:textColor="@color/gray_333333"
+                            android:textSize="@dimen/x30" />
+                    </RelativeLayout>
+
+                    <GridView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="@dimen/x18"
+                        android:numColumns="3"
+                        android:paddingLeft="@dimen/x18"
+                        android:paddingRight="@dimen/x18"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/x20"
+                        app:fragment="@{fragment}"
+                        app:itemLayout="@{@layout/adapter_class_popcity}"
+                        app:itemList="@{fragment.locationList}" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x80"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="重置"
+                        android:textColor="@color/gray_333333"
+                        android:onClick="@{(view)->fragment.itemResetClick(view)}"
+                        android:textSize="@dimen/x30" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/red_e51728"
+                        android:gravity="center"
+                        android:onClick="@{(view)->fragment.itemConfirmClick(view)}"
+                        android:text="确定"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x30" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

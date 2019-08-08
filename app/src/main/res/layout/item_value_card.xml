@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_relative_layout"
+    android:layout_width="@dimen/x346"
+    android:layout_height="@dimen/x166"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginTop="@dimen/x20"
+    android:background="@drawable/my_card_blue">
+
+    <TextView
+        android:id="@+id/cost_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/divider_line"
+        android:layout_alignStart="@+id/divider_line"
+        android:layout_marginTop="@dimen/x26"
+        android:text="@string/yuan"
+        android:textColor="@color/blue_1674b5"
+        android:textSize="@dimen/x50" />
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="@dimen/x260"
+        android:layout_height="1px"
+        android:layout_below="@id/cost_value"
+        android:layout_marginLeft="@dimen/item_card_left_margin"
+        android:layout_marginTop="@dimen/x12"
+        android:background="@color/white_ffffff" />
+
+    <TextView
+        android:id="@+id/monkey_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/divider_line"
+        android:layout_alignStart="@+id/divider_line"
+        android:layout_below="@+id/divider_line"
+        android:layout_marginTop="@dimen/x8"
+        android:text="@string/monkey_get"
+        android:textColor="@color/blue_1674b5"
+        android:textSize="@dimen/x26" />
+
+    <ImageView
+        android:id="@+id/checked_image_view"
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x30"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x42"
+        android:layout_marginTop="@dimen/x20"
+        android:src="@drawable/cart_draw_right" />
+
+</RelativeLayout>

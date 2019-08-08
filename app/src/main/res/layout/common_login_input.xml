@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <poll.com.zjd.view.ClearEditText
+        android:id="@+id/login_account"
+        android:layout_width="@dimen/login_edit_view_width"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/input_your_phone_number"
+        android:textColor="@color/gray_333333"
+        android:textColorHint="@color/gray_999999"
+        android:textSize="@dimen/x30"
+        android:lines="1"
+        android:inputType="phone"/>
+
+    <TextView
+        android:layout_width="@dimen/x640"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/x28"
+        android:background="@color/gray_999999" />
+
+    <LinearLayout
+        android:layout_width="@dimen/login_edit_view_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x40">
+
+        <poll.com.zjd.view.ClearEditText
+            android:id="@+id/login_very_code"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:lines="1"
+            android:hint="@string/input_your_very_code"
+            android:textColor="@color/gray_333333"
+            android:textColorHint="@color/gray_999999"
+            android:textSize="@dimen/x30"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/get_verify_code"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/x60"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@drawable/selector_very_code_background"
+            android:gravity="center"
+            android:text="@string/login_get_very_code"
+            android:textColor="@drawable/selector_very_code"
+            android:textSize="@dimen/x30" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/login_edit_view_width"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/gray_999999" />
+
+    <TextView
+        android:id="@+id/login_button"
+        android:layout_width="@dimen/login_edit_view_width"
+        android:layout_height="@dimen/x80"
+        android:layout_marginTop="@dimen/x80"
+        android:text="@string/login"
+        android:gravity="center"
+        android:background="@drawable/selector_red_button"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/x35"
+        />
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/fra_web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="待开发"/>
+
+        <RelativeLayout
+            android:id="@+id/home_share_r"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="#44000000">
+            <LinearLayout
+                android:layout_marginTop="@dimen/x120"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/x600"
+                android:layout_height="@dimen/y900"
+                android:background="@drawable/shape_white_radius"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_margin="@dimen/x20"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x650">
+                    <ImageView
+                        android:id="@+id/home_sign_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x650"
+                        android:scaleType="fitXY"/>
+
+                    <RelativeLayout
+                        android:id="@+id/home_sign_coupon"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/x170"
+                        android:layout_marginLeft="@dimen/x60"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x100">
+
+                        <TextView
+                            android:id="@+id/home_coupon_yuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/x40"
+                            android:layout_centerVertical="true"
+                            android:text="￥10"
+                            android:textColor="@color/red_e51728"/>
+
+                        <TextView
+                            android:id="@+id/home_coupon_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/x26"
+                            android:textColor="@color/gray_333333"
+                            android:layout_marginLeft="@dimen/x160"
+                            android:text="10元代金券"/>
+                        <TextView
+                            android:id="@+id/home_coupon_min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/x26"
+                            android:textColor="@color/gray_333333"
+                            android:layout_marginTop="@dimen/x33"
+                            android:layout_marginLeft="@dimen/x160"
+                            android:text="订满100远可用"/>
+                        <TextView
+                            android:id="@+id/home_coupon_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/x24"
+                            android:textColor="@color/gray_999999"
+                            android:layout_marginTop="@dimen/x70"
+                            android:layout_marginLeft="@dimen/x160"
+                            android:text="有效期至:2017-06-08"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/home_sign_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/x26"
+                    android:textColor="@color/red_e51728"
+                    android:text="签到成功，+5积分"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/home_share_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/x50"
+                        android:textColor="@android:color/white"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="@dimen/x30"
+                        android:paddingRight="@dimen/x30"
+                        android:layout_margin="@dimen/x30"
+                        android:textSize="@dimen/x26"
+                        android:background="@drawable/shape_red_radius_all_e71728"
+                        android:text="分享并邀请好友"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fra_nonetwork"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/nonetwork"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <include
+        android:id="@+id/login_head"
+        layout="@layout/common_head_back" />
+
+    <include
+        android:id="@+id/login_input"
+        layout="@layout/common_login_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x200" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_input"
+        android:layout_marginTop="@dimen/x20"
+        android:text="@string/login_create_account_for_unregister"
+        android:textColor="@color/gray_999999"
+        android:textSize="@dimen/x22"
+        android:layout_alignLeft="@id/login_input"/>
+
+    <ImageView
+        android:id="@+id/login_other_mode"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x80"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x75"
+        android:scaleType="fitXY"
+        android:src="@drawable/weixin" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_other_mode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x29"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/x170"
+            android:layout_height="1px"
+            android:background="@color/gray_cccccc" />
+
+        <TextView
+            android:layout_width="@dimen/x172"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/login_other_mode"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/x24" />
+
+        <TextView
+            android:layout_width="@dimen/x170"
+            android:layout_height="1px"
+            android:background="@color/gray_cccccc" />
+    </LinearLayout>
+</RelativeLayout>

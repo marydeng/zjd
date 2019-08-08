@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x100"
+    android:layout_height="@dimen/x100"
+    android:layout_marginRight="@dimen/x10">
+
+    <ImageView
+        android:id="@+id/good_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_img" />
+
+    <TextView
+        android:id="@+id/sold_out_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/sold_out"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/x22"
+        android:background="@color/mask"/>
+</FrameLayout>

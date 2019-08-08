@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goods_detail_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/common_head_right_icon" />
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:layout_above="@+id/bottom"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x450">
+
+                <!--<poll.com.zjd.view.ImageAutoViewPager-->
+                    <!--android:id="@+id/detail_auto_viewPager"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+
+                <com.youth.banner.Banner
+                    android:id="@+id/good_banner"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/x450"
+                    android:layout_height="@dimen/x450" />
+
+                <ImageView
+                    android:id="@+id/seconds_kill_icon_detail"
+                    android:layout_width="@dimen/x126"
+                    android:layout_height="@dimen/x128"
+                    android:src="@drawable/seconds_kill_detail" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x30"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:paddingTop="@dimen/x30">
+
+                <TextView
+                    android:id="@+id/ad_txt_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/gray_333333"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:id="@+id/name_txt_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ad_txt_detail"
+                    android:layout_marginTop="@dimen/x22"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/gray_999999"
+                    android:textSize="@dimen/x26" />
+
+                <TextView
+                    android:id="@+id/origin_price_txt_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_txt_detail"
+                    android:layout_marginTop="@dimen/x18"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/gray_999999"
+                    android:textSize="@dimen/x26" />
+
+                <TextView
+                    android:id="@+id/current_price_txt_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/origin_price_txt_detail"
+                    android:layout_marginTop="@dimen/x18"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/red_e51728"
+                    android:textSize="@dimen/x26" />
+
+                <TextView
+                    android:id="@+id/sold_num_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/current_price_txt_detail"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/gray_999999"
+                    android:textSize="@dimen/x26" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x20"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray_f0f0f0" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x100"
+                android:gravity="center"
+                android:text="@string/wine_characteristics"
+                android:textSize="@dimen/x32"
+                android:textColor="@color/gray_333333"
+                android:drawablePadding="@dimen/x20"
+                android:drawableLeft="@drawable/wine_characteristics_left"
+                android:drawableRight="@drawable/wine_characteristics_right"
+                android:layout_gravity="center_horizontal"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray_999999" />
+            <TextView
+                android:id="@+id/wine_characteristics_one"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_333333"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:text=""
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray_999999" />
+            <TextView
+                android:id="@+id/wine_characteristics_two"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_333333"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:text=""
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray_999999" />
+            <TextView
+                android:id="@+id/wine_characteristics_three"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_333333"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:text=""
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x20"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray_f0f0f0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/description_goods_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/goods_detail"
+                    android:textColor="@drawable/selector_detail_tab_txt"
+                    android:textSize="@dimen/x26"
+                    android:drawableBottom="@drawable/selector_detail_tab"
+                    android:drawablePadding="@dimen/x8"
+                    />
+
+                <TextView
+                    android:id="@+id/specifications_goods_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/goods_specifications"
+                    android:textColor="@drawable/selector_detail_tab_txt"
+                    android:textSize="@dimen/x26"
+                    android:drawableBottom="@drawable/selector_detail_tab"
+                    android:drawablePadding="@dimen/x8"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x20"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line" />
+            <poll.com.zjd.view.ListViewInScroll
+                android:id="@+id/specifications_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <poll.com.zjd.view.LinearLayoutForListView
+                android:id="@+id/description_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical"
+               />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x20"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray_f0f0f0" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:id="@+id/detail_cart_frame"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x98">
+
+            <ImageView
+                android:id="@+id/cart_icon"
+                android:layout_width="@dimen/x62"
+                android:layout_height="@dimen/x62"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/shopping_cart_detail" />
+
+            <TextView
+                android:id="@+id/cart_num_txt"
+                android:layout_width="@dimen/x26"
+                android:layout_height="@dimen/x26"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/x36"
+                android:layout_marginTop="@dimen/x16"
+                android:background="@drawable/red_round"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/x18" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/add_cart_button"
+            style="@style/red_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x98"
+            android:text="@string/add_to_cart" />
+    </LinearLayout>
+</RelativeLayout>

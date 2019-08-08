@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_head_back" />
+
+    <RelativeLayout
+        android:id="@+id/phone_number_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bind_phone_number_txt"
+            android:layout_alignBottom="@+id/bind_phone_number_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:text="@string/phone_number"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/x28" />
+
+        <ImageView
+            android:id="@+id/arrow_right_image_view"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/x24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_menu_padding"
+            android:src="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/bind_phone_number_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_menu_padding"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toLeftOf="@id/arrow_right_image_view"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/gray_929292"
+            android:textSize="@dimen/x28" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_999999" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weixin_num_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_menu_padding"
+            android:text="@string/weinxin_id"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/x28" />
+
+        <TextView
+            android:id="@+id/bind_wx_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_menu_padding"
+            android:layout_marginRight="@dimen/x54"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/gray_929292"
+            android:textSize="@dimen/x28" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_999999" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pay_password_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_menu_padding"
+            android:text="@string/pay_password"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/x28" />
+
+        <ImageView
+            android:id="@+id/pay_arrow_right_image_view"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/x24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_menu_padding"
+            android:src="@drawable/arrow_right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_999999" />
+    </RelativeLayout>
+</LinearLayout>

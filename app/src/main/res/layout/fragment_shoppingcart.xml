@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/theme_color">
+
+        <TextView
+            style="@style/cart_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/coupons_notice_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/price_pink"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/cart_zsh"
+                    android:layout_width="@dimen/x120"
+                    android:layout_height="@dimen/x50"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@drawable/shape_red_radius_e71728"
+                    android:text="臻实惠"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/coupons_notice_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_toRightOf="@+id/cart_zsh"
+                    android:text="已为您默认选中最优惠的30元券"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <View style="@style/style_line_1" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_bg">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@android:color/white">
+
+                        <LinearLayout
+                            android:id="@+id/location_shopping_cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/x35"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/x30"
+                                android:layout_height="@dimen/x30"
+                                android:layout_gravity="center"
+                                android:src="@drawable/cart_location" />
+
+                            <TextView
+                                android:id="@+id/location_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/x20"
+                                android:layout_marginRight="@dimen/x15"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:maxLength="5"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:maxWidth="@dimen/x140"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/x20"
+                                android:layout_height="@dimen/x20"
+                                android:layout_gravity="center"
+                                android:src="@drawable/one_arrows_down" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View style="@style/style_line_20" />
+
+                    <poll.com.zjd.view.SwipeListViewInScroll
+                        android:id="@+id/cart_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/second_kill_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x60"
+                        android:background="@color/black_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:text="@string/second_kill_no_coupons"
+                            android:textColor="#9A9A9A"
+                            android:textSize="@dimen/x28" />
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/cart_left_rv">
+
+                        <TextView
+                            style="@style/cart_left_text"
+                            android:text="秒杀价" />
+
+                        <TextView
+                            android:id="@+id/second_kill_price"
+                            style="@style/cart_right_text"
+                            android:text="￥ 0" />
+
+                        <View
+                            style="@style/style_line_1"
+                            android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/cart_left_rv">
+
+                        <TextView
+                            style="@style/cart_left_text"
+                            android:text="会员价" />
+
+                        <TextView
+                            android:id="@+id/member_price"
+                            style="@style/cart_right_text"
+                            android:text="￥ 0" />
+
+                        <View
+                            style="@style/style_line_1"
+                            android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/coupons_relative_layout"
+                        style="@style/cart_left_rv">
+
+                        <TextView
+                            android:id="@+id/coupons_used"
+                            style="@style/cart_left_text"
+                            android:text="@string/no_coupons_can_use" />
+
+                        <ImageView
+                            android:id="@+id/coupons_arrow_icon"
+                            android:layout_width="@dimen/x13"
+                            android:layout_height="@dimen/x23"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/arrow_right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/x15"/>
+
+                        <TextView
+                            android:id="@+id/coupons_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="-￥ 0"
+                            android:layout_toLeftOf="@id/coupons_arrow_icon"
+                            android:textColor="@color/red_e51728"
+                            android:textSize="@dimen/x26"
+                            android:layout_marginRight="@dimen/x8"/>
+
+
+                        <View
+                            style="@style/style_line_1"
+                            android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/cart_left_rv">
+
+                        <TextView
+                            style="@style/cart_left_text"
+                            android:text="@string/cart_discount_amount" />
+
+                        <TextView
+                            android:id="@+id/discount_amount"
+                            style="@style/cart_right_text"
+                            android:text="- ￥ 0"
+                            android:textColor="@color/red_e51728"/>
+
+                        <View
+                            style="@style/style_line_1"
+                            android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/cart_left_rv">
+
+                        <TextView
+                            style="@style/cart_left_text"
+                            android:text="商品实付" />
+
+                        <TextView
+                            android:id="@+id/real_pay_price"
+                            style="@style/cart_right_text"
+                            android:text="￥ 0"
+                            android:textColor="@android:color/black" />
+
+                        <View
+                            style="@style/style_line_1"
+                            android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/cart_left_rv">
+
+                        <TextView
+                            style="@style/cart_left_text"
+                            android:text="运费" />
+
+                        <TextView
+                            android:id="@+id/transportation_expense"
+                            style="@style/cart_right_text"
+                            android:text="免邮"
+                            android:textColor="@android:color/black" />
+
+                        <View
+                            style="@style/style_line_1"
+                            android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/cart_left_rv">
+
+                        <TextView
+                            android:id="@+id/total_price"
+                            style="@style/cart_right_text"
+                            android:text="合计:￥ 0" />
+
+                        <View
+                            style="@style/style_line_1"
+                            android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x340" />
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/gather_goods_relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/x100"
+            android:background="@color/red_e51728_40_trans"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/gather_goods_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:text="去凑单 >"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_alignParentBottom="true">
+
+            <View style="@style/style_line_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:id="@+id/cart_selectAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/select_all_icon"
+                            android:layout_width="@dimen/x26"
+                            android:layout_height="@dimen/x26"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/selector_checkbox_button" />
+
+                        <TextView
+                            style="@style/cart_left_text"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:text="全选" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/button_settlement"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/red_e51728">
+
+                    <TextView
+                        android:id="@+id/settlement_txt"
+                        style="@style/cart_head_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="去结算"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/view_no_data"
+        layout="@layout/view_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@id/top_title"/>
+</RelativeLayout>

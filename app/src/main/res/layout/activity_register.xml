@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/login_head"
+        layout="@layout/common_head_back" />
+    <TextView
+        android:id="@+id/register_invite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x44"
+        android:textSize="@dimen/x24"
+        android:textColor="@color/red_e51728"
+        android:background="@color/gray_f9fff3"
+        android:text="@string/invite_members"
+        android:gravity="center"
+        android:layout_below="@id/login_head"/>
+    <ImageView
+        android:id="@+id/register_logo"
+        android:layout_width="@dimen/x130"
+        android:layout_height="@dimen/x130"
+        android:layout_below="@id/register_invite"
+        android:background="@drawable/logo_circle"
+        android:layout_marginTop="@dimen/x113"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/register_club_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_logo"
+        android:layout_marginTop="@dimen/x20"
+        android:textSize="@dimen/x23"
+        android:textColor="@color/gray_333333"
+        android:text="@string/zhen_jiu_club"
+        android:layout_centerHorizontal="true"
+        />
+    <include
+        android:id="@+id/login_input"
+        layout="@layout/common_login_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_club_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x110" />
+</RelativeLayout>

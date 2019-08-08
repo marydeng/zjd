@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f0f0f0"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/x280"
+        android:layout_height="@dimen/x480"
+        android:scaleType="fitXY"
+        android:src="@drawable/rocket" />
+
+    <TextView
+        android:id="@+id/login_button"
+        android:layout_width="@dimen/login_edit_view_width"
+        android:layout_height="@dimen/x80"
+        android:layout_marginTop="@dimen/x154"
+        android:background="@drawable/selector_red_button"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/x35" />
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/login_head"
+        layout="@layout/common_head_back" />
+
+    <LinearLayout
+        android:id="@+id/login_safe_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_head"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/x80">
+
+        <ImageView
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:scaleType="fitXY"
+            android:src="@drawable/safeicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_bind_for_safe"
+            android:textColor="@color/green_31c27c"
+            android:textSize="@dimen/x30" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/login_input"
+        layout="@layout/common_login_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_safe_notice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x80" />
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x324"
+        android:orientation="vertical"
+        android:background="@drawable/red_background">
+
+        <include layout="@layout/common_head_white_txt" />
+
+        <TextView
+            android:id="@+id/my_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="¥ 56.00"
+            android:textColor="@color/white_ffffff"
+            android:textSize="@dimen/x70" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x20"
+        android:background="@color/gray_f9fff3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/x28"
+            android:layout_height="@dimen/x28"
+            android:scaleType="fitXY"
+            android:src="@drawable/class_ic"/>
+
+        <TextView
+            android:id="@+id/balance_highest_giving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:text="@string/highest_giving_money"
+            android:textColor="@color/gray_333333" />
+
+        <ImageView
+            android:layout_width="@dimen/x28"
+            android:layout_height="@dimen/x28"
+            android:src="@drawable/class_ic"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/balance_charge"
+        android:layout_width="@dimen/login_edit_view_width"
+        android:layout_height="@dimen/x80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/x40"
+        android:layout_marginTop="@dimen/x60"
+        android:background="@drawable/selector_red_button"
+        android:gravity="center"
+        android:text="@string/immediately_recharge"
+        android:textColor="@color/white_ffffff" />
+
+   <include layout="@layout/common_charge_notice"/>
+</LinearLayout>

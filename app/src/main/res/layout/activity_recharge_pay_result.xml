@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_head_back" />
+
+    <ImageView
+        android:id="@+id/trade_result_img"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/x100"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/x40"
+        android:layout_marginTop="@dimen/x118"
+        android:scaleType="fitXY"
+        android:src="@drawable/pay_success" />
+
+    <TextView
+        android:id="@+id/trade_result_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/x120"
+        android:text="@string/trade_success"
+        android:textColor="@color/gray_999999"
+        android:textSize="@dimen/x28" />
+
+    <include layout="@layout/common_pay_info" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x68"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/back_txt"
+            android:layout_width="@dimen/x260"
+            android:layout_height="@dimen/x80"
+            android:background="@drawable/shape_red_line"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/red_e51728"
+            android:textSize="@dimen/x30"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/browser_goods_txt"
+            android:layout_width="@dimen/x260"
+            android:layout_height="@dimen/x80"
+            android:background="@drawable/selector_red_button"
+            android:gravity="center"
+            android:text="@string/browser_goods"
+            android:textColor="@color/white_ffffff"
+            android:textSize="@dimen/x30" />
+    </LinearLayout>
+</LinearLayout>

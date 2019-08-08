@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="login_edit_view_width">@dimen/x640</dimen>
+    <dimen name="item_card_left_margin">@dimen/x25</dimen>
+    <dimen name="item_card_left_margin_my_home">@dimen/x22</dimen>
+    <dimen name="setting_menu_padding">@dimen/x30</dimen>
+    <dimen name="password_size">@dimen/x100</dimen>
+    <dimen name="password_padding">@dimen/x40</dimen>
+    <dimen name="view_text_size">16sp</dimen>
+</resources>

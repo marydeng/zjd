@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coupons_relative_layout"
+    android:layout_width="@dimen/x710"
+    android:layout_height="@dimen/x200"
+    android:layout_marginBottom="@dimen/x20"
+    android:background="@drawable/coupons_background">
+
+    <TextView
+        android:id="@+id/coupons_txt"
+        android:layout_width="@dimen/x40"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/x8"
+        android:text="@string/coupons"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/x26" />
+
+    <TextView
+        android:id="@+id/coupons_money"
+        android:layout_width="@dimen/x200"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="￥10"
+        android:textColor="@color/red_e51728"
+        android:textSize="@dimen/x56"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/coupons_txt"
+        android:layout_toEndOf="@+id/coupons_txt" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/coupons_money"
+        android:paddingLeft="@dimen/x56"
+        android:paddingRight="@dimen/x38">
+        <TextView
+            android:id="@+id/coupons_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x26"
+            android:textColor="@color/gray_333333"
+            android:text="10元劵"
+            android:layout_marginTop="@dimen/x54"/>
+        <TextView
+            android:id="@+id/coupons_scope"
+            android:layout_below="@id/coupons_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x26"
+            android:textColor="@color/gray_333333"
+            android:text="订单满100元可用"
+            android:layout_marginTop="@dimen/x10"/>
+        <TextView
+            android:id="@+id/coupons_validity"
+            android:layout_below="@id/coupons_scope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x24"
+            android:textColor="@color/gray_999999"
+            android:text="有效期至：2017-06-08（周四）"
+            android:layout_marginTop="@dimen/x16"/>
+        <TextView
+            android:id="@+id/overdue_notice_txt"
+            android:layout_width="@dimen/x122"
+            android:layout_height="@dimen/x40"
+            android:textColor="@color/red_e51728"
+            android:textSize="@dimen/x24"
+            android:gravity="center"
+            android:text="即将过期"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/shape_red_line_radius_20"/>
+        <ImageView
+            android:id="@+id/check_image_view"
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/x32"
+            android:src="@drawable/selector_checkbox_button_no_background"
+            android:layout_marginTop="@dimen/x84"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

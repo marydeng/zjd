@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/common_head_back" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/gray_333333"
+            android:text="@string/need_pay"
+            />
+        <TextView
+            android:id="@+id/pay_monkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/red_e51728"
+            android:text="￥0"
+            android:layout_marginLeft="@dimen/x22"
+            android:layout_marginRight="@dimen/x20"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:background="@color/gray_f0f0f0"
+        android:textSize="@dimen/x26"
+        android:textColor="@color/gray_999999"
+        android:text="@string/pay_way"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x30"
+        />
+    <LinearLayout
+        android:id="@+id/card_pay_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="@dimen/x55"
+            android:layout_height="@dimen/x55"
+            android:scaleType="fitXY"
+            android:src="@drawable/card_pay"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginLeft="@dimen/x20"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_pay"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/x26" />
+        <TextView
+            android:id="@+id/balance_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/gray_999999"
+            android:textSize="@dimen/x22"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/card_pay_image_view"
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/x32"
+            android:layout_marginRight="@dimen/x30"
+            android:src="@drawable/selector_checkbox_button" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/weixin_pay_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x55"
+            android:layout_height="@dimen/x55"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:scaleType="fitXY"
+            android:src="@drawable/weixin_pay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/weixin_pay"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/x26" />
+
+        <ImageView
+            android:id="@+id/weixin_pay_image_view"
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/x32"
+            android:layout_marginRight="@dimen/x30"
+            android:src="@drawable/selector_checkbox_button" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line" />
+    <LinearLayout
+        android:id="@+id/zhifubao_pay_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="@dimen/x55"
+            android:layout_height="@dimen/x55"
+            android:scaleType="fitXY"
+            android:src="@drawable/zhifubao_pay"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginLeft="@dimen/x20"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zhifubao_pay"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/x26"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/zhifubao_pay_image_view"
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/x32"
+            android:layout_marginRight="@dimen/x30"
+            android:src="@drawable/selector_checkbox_button" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:background="@color/gray_f0f0f0">
+        <TextView
+            android:id="@+id/confirm_pay"
+            android:layout_width="@dimen/login_edit_view_width"
+            android:layout_height="@dimen/x80"
+            android:layout_marginTop="@dimen/x80"
+            android:text="@string/confirm_pay"
+            android:gravity="center"
+            android:background="@drawable/selector_red_button"
+            android:textColor="@color/white_ffffff"
+            android:textSize="@dimen/x35"
+            />
+    </LinearLayout>
+</LinearLayout>

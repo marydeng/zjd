@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "poll.com.zjd"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 41
+        versionName "8.8"  //1.42
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a','x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "a52ed920a52e5a3bf368df7a", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default",       //暂时填写默认值即可.
+                UMENG_APPKEY : "59acaeac734be4185a000236", //友盟统计
+        ]
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    jcenter()
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:multidex:1.0.1'
+    //屏幕适配
+    compile(name: 'autoadaptation', ext: 'aar')
+    //bugly
+    compile(name: 'bugly_crashreport_upgrade-1.3.1', ext: 'aar')
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    //友盟统计
+    compile 'me.tatarka:gradle-retrolambda:3.3.0'
+    compile 'com.loopj.android:android-async-http:1.4.6'
+    //网络请求框架
+    compile 'com.lzy.net:okgo:3.0.3'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.alibaba:fastjson:1.2.8'
+    compile 'com.google.code.gson:gson:2.8.0'
+    //    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //图片加载框架
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    //glide图片加载动画
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    //viewPager指示器
+    testCompile 'junit:junit:4.12'
+    compile files('libs/org.apache.http.legacy.jar')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.0.2'
+    compile 'com.github.Plumillon:ChipView:1.2.0'
+    //历史下面的text
+    compile project(path: ':ImageSelectLibrary')
+    //微信支付宝支付
+    compile 'com.github.javen205.JPay:jpaylib:0.0.3'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.sina.weibo.sdk:core:4.1.0:openDefaultRelease@aar'
+    compile 'com.youth.banner:banner:1.4.10'  //轮播
+    compile 'cn.jiguang.sdk:jpush:3.0.9'  // 此处以JPush 3.0.3 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.7'  // 此处以JCore 1.1.1 版本为例。
+}

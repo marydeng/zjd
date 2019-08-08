@@ -1,0 +1,261 @@
+<resources>
+    <string name="app_name">臻酒到</string>
+    <string name="action_settings">Settings</string>
+
+    <!--首页-->
+    <string name="home_start">新人专享</string>
+    <string name="home_gift">邀请有礼</string>
+    <string name="home_sign">每日签到</string>
+    <string name="home_kill">限时秒杀</string>
+    <string name="title_activity_login2">poll.com.zjd.activity</string>
+    <string name="zhen_affordable">臻Tips</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!--登录-->
+    <string name="login">登录</string>
+    <string name="login_notExistError">请先登录</string>
+    <string name="login_bind_phone">绑定手机号</string>
+    <string name="login_Immediately_binding">立即绑定</string>
+    <string name="login_get_very_code">获取验证码</string>
+    <string name="login_resend_code">%1$d秒后重发</string>
+    <string name="login_bind_for_safe">为了您的账号安全，请绑定手机</string>
+    <string name="login_create_account_for_unregister">未注册过的用户将直接为您创建账户</string>
+    <string name="login_other_mode">其他登录方式</string>
+    <string name="input_your_phone_number">请输入您的手机号</string>
+    <string name="input_your_very_code">请输入验证码</string>
+    <string name="input_valid_phone_number">请输入合法的手机号</string>
+    <string name="wait_for_login">正在登录中，请稍后……</string>
+    <string name="invite_members">邀请您成为臻酒到会员，尽享臻实惠</string>
+    <string name="zhen_jiu_club">臻酒会</string>
+    <string name="register">注册</string>
+    <string name="guide_count_down">%1d秒跳过</string>
+    <string name="wx_not_installed">您还未安装微信客户端</string>
+
+    <!-- 我的余额-->
+    <string name="highest_giving_money">储值最高可送%1$s元</string>
+    <string name="immediately_recharge">立即储值</string>
+    <string name="recharge_notice">储值说明</string>
+    <string name="recharge_notice_one">1.储值金额暂不支持提现功能</string>
+    <string name="recharge_notice_two">2.解释权归臻酒到所有</string>
+    <string name="my_balance">我的余额</string>
+    <string name="my_balance_detail">明细</string>
+    <string name="yuan">%1$s元</string>
+    <string name="monkey_get">可得%1$s元余额</string>
+    <string name="coupons_get">送代金券%1$s元</string>
+    <string name="both_get">得%1$s元+代金券%2$s元</string>
+
+
+    <!--余额明细-->
+    <string name="balance_detail">余额明细</string>
+    <string name="balance_consume">余额消费</string>
+    <string name="balance_recharge">储值</string>
+    <string name="balance_refund">订单退款</string>
+    <string name="balance_recharge_get">储值送</string>
+    <string name="balance_no_history">您暂时没有消费记录</string>
+
+    <!--设置-->
+    <string name="version_num">版本号V%1$s</string>
+    <string name="setting">设置</string>
+    <string name="check_update">检查更新</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="account_safe">账号与安全</string>
+    <string name="exit">退出</string>
+    <string name="wait_for_exit">正在退出账号，请稍后……</string>
+    <string name="confirm_quit">确认退出账户？</string>
+
+
+
+    <!--账户与安全-->
+    <string name="account_and_safe">账户与安全</string>
+    <string name="phone_number">手机号</string>
+    <string name="weinxin_id">微信号</string>
+    <string name="pay_password">支付密码</string>
+    <string name="current_phone_number">当前手机号</string>
+    <string name="change_phone_number">更换手机号</string>
+    <string name="submit">提交</string>
+    <string name="set_pay_password">设置支付密码</string>
+    <string name="modify_pay_password">重置支付密码</string>
+    <string name="next">下一步</string>
+    <string name="set_pay_password_for_safe">为了您的资金安全，请设置支付密码</string>
+    <string name="input_pay_password">请输入支付密码：</string>
+    <string name="confirm_input_pay_password">请再次输入支付密码：</string>
+    <string name="different_password_in_twice">两次输入的密码不一致</string>
+    <string name="input_old_pay_password">请输入旧的支付密码：</string>
+    <string name="input_new_pay_password">请输入新的支付密码：</string>
+    <string name="clear_how_much_cache">清除了%1$s缓存</string>
+    <string name="clear_cache_fail">清除缓存失败</string>
+    <string name="save_password_success">保存密码成功</string>
+    <string name="update_password_success">重置密码成功</string>
+    <string name="the_same_with_old_number">新手机号与当前手机号相同，不能更改</string>
+
+    <!--充值-->
+    <string name="choose_pay_way">选择支付方式</string>
+    <string name="pay_with_weixin">微信支付</string>
+    <string name="pay_with_zhifubao">支付宝支付</string>
+    <string name="my_balance_rechare">余额充值</string>
+
+    <!--地址-->
+    <string name="set_default_address">设置默认地址</string>
+    <string name="edit">编辑</string>
+    <string name="my_address">我的地址</string>
+    <string name="indentation_address">公司公</string>
+    <string name="add_address">新增地址</string>
+    <string name="edit_address">编辑地址</string>
+    <string name="recipient">收货人</string>
+    <string name="your_name">您的姓名</string>
+    <string name="your_phone_number">手机号码</string>
+    <string name="phone_number_contact_you">配送员联系您的手机号</string>
+    <string name="your_city">所在城市</string>
+    <string name="your_local_city">您所在城市</string>
+    <string name="your_receiving_city">收货地址</string>
+    <string name="your_location_about_community">您所在的小区/写字楼</string>
+    <string name="detail_address">详细位置</string>
+    <string name="hint_detail_address">楼号/单元/门牌号</string>
+    <string name="address_type">地址类型</string>
+    <string name="company">公司</string>
+    <string name="residential">住宅</string>
+    <string name="school">学校</string>
+    <string name="other">其它</string>
+    <string name="save">保存</string>
+    <string name="address_search">地址搜索</string>
+    <string name="notice_recipient_empty">请填写收货人姓名</string>
+    <string name="notice_input_city">请选择您所在的城市</string>
+    <string name="notice_input_receiving_address">请选择您的小区/写字楼</string>
+    <string name="notice_input_detail_address">请选择您的楼号/单元/门牌号</string>
+    <string name="confirm_delete_address">确认要删除该地址吗？</string>
+    <string name="delete_ongoing">正在删除……</string>
+    <string name="no_address_now">您还没有收货地址呦～</string>
+    <string name="choose_city">请先选择城市</string>
+    <string name="input_keyword_in_city">你选择的城市是“%1$s”\n请搜索该城市您收货的小区/写字楼</string>
+    <string name="no_relative_result">没有相关的搜索结果</string>
+
+    <!--MY 首页-->
+    <string name="title_modify_user_name">修改昵称</string>
+    <string name="user_name">用户名</string>
+    <string name="invite_get_coupons_value">可得 %1$s 元代金券</string>
+
+    <!--商品详情-->
+    <string name="add_to_cart">加入购物车</string>
+    <string name="already_add_to_cart">已加入购物车</string>
+    <string name="second_kill_no_stock">抢光啦</string>
+    <string name="stop_sale">已停售</string>
+    <string name="goods_detail">详情</string>
+    <string name="goods_specifications">规格</string>
+    <string name="wine_characteristics">酒品特色</string>
+    <string name="goods_detail_title">商品详情</string>
+    <string name="origin_price_txt">原价 ￥%1$s</string>
+    <string name="member_price_txt">会员价 ￥%1$s</string>
+    <string name="second_kill_price_txt">秒杀价 ￥%1$s</string>
+    <string name="sold_num">已售 %1$d</string>
+    <string name="stock_insufficient">商品库存不足</string>
+    <string name="second_kill_goods_only_buy_one">秒杀商品只能购买一个</string>
+
+
+    <!-- 购物车提交订单-->
+    <string name="choose_address">选择收货地址</string>
+    <string name="management">管理</string>
+    <string name="default_address">[默认地址]</string>
+    <string name="pay_verfy">支付验证</string>
+    <string name="need_pay">需支付:</string>
+    <string name="pay_way">支付方式</string>
+    <string name="card_pay">储值支付</string>
+    <string name="weixin_pay">微信支付</string>
+    <string name="zhifubao_pay">支付宝支付</string>
+    <string name="card_balance_value">（余额￥%1$s）</string>
+    <string name="confirm_pay">确认支付</string>
+    <string name="pay">支付</string>
+    <string name="no_use_coupons">不使用优惠券</string>
+    <string name="no_multiple_coupons_once">优惠券不能使用多张</string>
+    <string name="coupons">代金券</string>
+    <string name="money_symbol">￥</string>
+    <string name="goods_list">商品列表</string>
+    <string name="delivery">配送</string>
+    <string name="note">备注：</string>
+    <string name="note_description">选填，若有特殊要求，可给予留言说明</string>
+    <string name="tip_second_kill">提示：秒杀商品不参与优惠券使用</string>
+    <string name="privilege">优惠说明</string>
+    <string name="second_kill_price">秒杀价</string>
+    <string name="member_price">会员价</string>
+    <string name="good_real_pay">商品实付</string>
+    <string name="postage">邮费</string>
+    <string name="free_post">免邮</string>
+    <string name="total">合计：</string>
+    <string name="go_to_pay">去支付</string>
+    <string name="pay_monkey">付款：</string>
+    <string name="commit_order">提交订单</string>
+    <string name="sold_out">已售罄</string>
+    <string name="input_pay_pwd">请输入支付密码</string>
+    <string name="two_hours_arrive">当日%1$s&#8211;%2$s下单，可2小时送达</string>
+    <string name="two_hours_arrive_tomorrow">当日%1$s&#8211;次日%2$s下单，将于次日优先2小时送达</string>
+    <string name="coupons_title">优惠券</string>
+    <string name="goods_num">共%1$s件</string>
+    <string name="deliver_mode_two_hour_arrive">2小时达</string>
+    <string name="deliver_mode_two_hour_arrive_tomorrow">明日2小时达</string>
+    <string name="deliver_mode_express">快递送</string>
+    <string name="receiving_address">收货地址</string>
+    <string name="coupons_name">%1$s元券</string>
+    <string name="coupons_no_limit">无门槛使用</string>
+    <string name="coupons_low_limit">订单满%1$s元可用</string>
+    <!--购物车首页-->
+    <string name="best_coupons_choosed">已为您默认选中最优惠的%1$s元券</string>
+    <string name="second_kill_no_coupons">提示：秒杀商品不参与优惠券的使用</string>
+    <string name="confirm_delete_goods">确认要删除该商品吗？</string>
+    <string name="gather_goods_for_free_express">实付满￥ %1$s 免邮，还差￥ %2$s</string>
+    <string name="no_coupons_can_use">优惠券(无可用优惠券)</string>
+    <string name="coupons_can_use_type">优惠券(%1$s元优惠券)</string>
+    <string name="coupons_name_title">优惠券</string>
+    <string name="free_transportation">免邮</string>
+    <string name="total_monkey">合计:￥%1$s</string>
+    <string name="no_any_goods">您还没有添加任何商品哦~</string>
+    <string name="stock_num">库存：%1$d</string>
+    <string name="stock_count_insufficient">当前选择的商品库存不足</string>
+    <string name="cart_no_goods_choose">当前没有选择的商品</string>
+    <string name="cart_discount_amount">优惠金额</string>
+    <!--选择优惠券-->
+    <string name="no_reach_lowest_pay_account">当前实付金额未达到该优惠券的最低金额限制%1$s,</string>
+
+    <!--支付结果跳转页面-->
+    <string name="trade_success">交易成功</string>
+    <string name="trade_fail">交易失败</string>
+    <string name="buy_info">购买信息</string>
+    <string name="pay_info">付款信息</string>
+    <string name="pay_mode">付款方式</string>
+    <string name="recharge">充值</string>
+    <string name="weixin_pay_mode">微信支付</string>
+    <string name="zhifubao_pay_mode">支付宝支付</string>
+    <string name="card_pay_mode">储值支付</string>
+    <string name="check_order_list">查看订单</string>
+    <string name="continue_browser_goods">继续逛逛</string>
+    <string name="browser_goods">去逛逛</string>
+    <string name="pay_success">支付成功</string>
+    <string name="pay_fail">支付失败</string>
+    <string name="back">返回</string>
+    <string name="pay_notice">臻酒到商品</string>
+    <!--Common-->
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="complete">完成</string>
+    <string name="monkey_currency_symbol">￥ %1$s</string>
+    <string name="ok">确认</string>
+
+    <!--搜索-->
+    <string name="arrival_remind">到货提醒</string>
+    <string name="dialog_arrival_remind_title">订阅成功</string>
+    <string name="dialog_arrival_remind_content">该商品到货后会第一时间推送消息给您</string>
+    <string name="dialog_arrival_remind_ok">知道啦</string>
+    <string name="no_search_result">未搜索到您想要的商品换个关键词试试？</string>
+
+    <!--秒杀-->
+    <string name="cessor_list_no_data">没有秒杀商品</string>
+</resources>

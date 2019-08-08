@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="theme_color">#ffffff</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="orange">#ff9900</color>
+    <color name="text_white">#fefefe</color>
+    <color name="bg_f2f2f2">#f2f2f2</color>
+
+    <color name="price_red">#e51728</color>
+    <color name="price_pink">#F5A2A9</color>
+    <color name="red_e51728_40_trans">#68e51728</color>
+    <color name="line">#e5e5e5</color>
+    <color name="black_bg">#f0f0f0</color>
+    <color name="gray_333333">#333333</color>
+    <color name="gray_666666">#666666</color>
+    <color name="gray_999999">#999999</color>
+    <color name="gray_cccccc">#cccccc</color>
+    <color name="gray_f9fff3">#f9fff3</color>
+    <color name="gray_f0f0f0">#f0f0f0</color>
+    <color name="gray_929292">#929292</color>
+    <color name="gray_a0a0a0">#a0a0a0</color>
+    <color name="gray_494949">#494949</color>
+    <color name="gray_cdcdcd">#cdcdcd</color>
+    <color name="gray_a1a1a1">#a1a1a1</color>
+    <color name="gray_7C7C7C">#7C7C7C</color>
+
+
+    <color name="red_ff0000">#FF0000</color>
+    <color name="red_c7090b">#c7090b</color>
+    <color name="red_e51728">#e51728</color>
+    <color name="red_e54956">#e54956</color>
+    <color name="red_c84a70">#c84a70</color>
+    <color name="login_hint_text_edit_view">#999999</color>
+    <color name="green_31c27c">#31c27c</color>
+    <color name="white_ffffff">#ffffff</color>
+    <color name="blue_1674b5">#1674b5</color>
+    <color name="purple_683f95">#683f95</color>
+    <color name="yellow_edc958">#edc958</color>
+    <color name="red_66e51728">#66e51728</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="trans_black_50">#7f000000</color>
+    <color name="trans_black_5">#0D000000</color>
+    <color name="trans_black_0">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="gray">#d1d1d1</color>
+    <color name="mask">#26000000</color>
+
+    <color name="white_mask">#4cffffff</color>
+
+</resources>

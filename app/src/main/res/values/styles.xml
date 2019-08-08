@@ -1,0 +1,178 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/theme_color</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/shape_gray_line</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="style_default_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textColor">@color/gray_333333</item>
+    </style>
+
+    <!--通用的 x20 灰低分开线条-->
+    <style name="style_line_20">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x20</item>
+        <item name="android:background">@color/black_bg</item>
+    </style>
+    <!--通用的 x1 灰低分开线条-->
+    <style name="style_line_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x1</item>
+        <item name="android:background">@color/line</item>
+    </style>
+    <!--我的页面字体样式-->
+    <style name="my_text_class_28">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/x68</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/gray_333333</item>
+        <item name="android:textSize">@dimen/x28</item>
+    </style>
+
+    <style name="my_text_class_24">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/x26</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/gray_333333</item>
+        <item name="android:textSize">@dimen/x24</item>
+    </style>
+    <!--我的页面向右的箭头-->
+    <style name="my_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/x26</item>
+        <item name="android:layout_marginRight">@dimen/x30</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/arrow_right</item>
+    </style>
+    <!--我的页面左边图片的样式-->
+    <style name="my_left_img">
+        <item name="android:layout_width">@dimen/x28</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/x26</item>
+    </style>
+    <!--我的页面右边灰色文字的样式-->
+    <style name="my_right_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/x60</item>
+        <item name="android:textColor">@color/gray_999999</item>
+        <item name="android:textSize">@dimen/x26</item>
+    </style>
+
+    <!--购物车*************************-->
+    <style name="cart_head_text">
+        <item name="android:textSize">@dimen/x38</item>
+    </style>
+
+    <!--页面下面每个条的高RV-->
+    <style name="cart_left_rv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/x80</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="cart_left_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/x30</item>
+    </style>
+
+    <style name="cart_right_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/x15</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textColor">@color/red_e51728</item>
+    </style>
+    <!--页面打勾的宽高统一-->
+    <style name="cart_draw">
+        <item name="android:layout_width">@dimen/x26</item>
+        <item name="android:layout_height">@dimen/x26</item>
+    </style>
+
+    <style name="window_translate_bottom" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="@android:windowExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+
+    <style name="window_translate_top" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/slide_top_in</item>
+        <item name="@android:windowExitAnimation">@anim/slide_top_out</item>
+    </style>
+    <!-- 一般的Dialog样式 -->
+    <style name="dlg_common" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <style name="btn_dialog">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/selector_dialog_bottom_bg</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="BottomDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+
+    <style name="red_button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_red_button</item>
+        <item name="android:textColor">@color/white_ffffff</item>
+        <item name="android:textSize">@dimen/x35</item>
+    </style>
+
+</resources>

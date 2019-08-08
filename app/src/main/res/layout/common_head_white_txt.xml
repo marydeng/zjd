@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x80">
+
+    <ImageView
+        android:id="@+id/head_back"
+        android:layout_width="@dimen/x69"
+        android:layout_height="@dimen/x48"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/x8"
+        android:paddingLeft="@dimen/x26"
+        android:paddingRight="@dimen/x26"
+        android:paddingTop="@dimen/x8"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow_left_white" />
+
+    <TextView
+        android:id="@+id/head_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="@dimen/x550"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/x34" />
+
+    <TextView
+        android:id="@+id/head_text_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x30"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:maxLines="1"
+        android:maxWidth="@dimen/x60"
+        android:minWidth="@dimen/x40"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/x26" />
+</RelativeLayout>

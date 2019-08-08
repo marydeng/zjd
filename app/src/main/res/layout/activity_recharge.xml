@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/top_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x440"
+        android:background="@drawable/red_wave_background"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_head_white_txt" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/card_relative_layout"
+            android:layout_width="@dimen/x414"
+            android:layout_height="@dimen/x204"
+            android:layout_gravity="center"
+            android:background="@drawable/my_card_blue">
+
+            <TextView
+                android:id="@+id/cost_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x58"
+                android:layout_marginTop="@dimen/x39"
+                android:text="@string/yuan"
+                android:textColor="@color/red_c84a70"
+                android:textSize="@dimen/x50" />
+
+            <View
+                android:id="@+id/divider_line"
+                android:layout_width="@dimen/x260"
+                android:layout_height="2px"
+                android:layout_below="@id/cost_value"
+                android:layout_marginLeft="@dimen/x58"
+                android:layout_marginTop="@dimen/x16"
+                android:background="@color/white_ffffff" />
+
+            <TextView
+                android:id="@+id/monkey_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/divider_line"
+                android:layout_alignStart="@+id/divider_line"
+                android:layout_below="@+id/divider_line"
+                android:layout_marginTop="@dimen/x20"
+                android:text="@string/monkey_get"
+                android:textColor="@color/red_c84a70"
+                android:textSize="@dimen/x26" />
+        </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x34"
+        android:maxLines="1"
+        android:text="@string/choose_pay_way"
+        android:textColor="@color/gray_cdcdcd"
+        android:textSize="@dimen/x28"
+        android:layout_marginLeft="@dimen/x20"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x53"
+        android:layout_marginBottom="@dimen/x46">
+
+        <View
+            android:id="@+id/center_divider"
+            android:layout_width="1px"
+            android:layout_height="@dimen/x120"
+            android:layout_centerInParent="true"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/weixin_pay_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/selector_weixin_choose_status"
+            android:drawablePadding="@dimen/x28"
+            android:text="@string/pay_with_weixin"
+            android:layout_toLeftOf="@id/center_divider"
+            android:layout_marginRight="@dimen/x120"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/x27"
+            />
+        <TextView
+            android:id="@+id/zhifubao_pay_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/selector_zhifubao_choose_status"
+            android:drawablePadding="@dimen/x28"
+            android:text="@string/pay_with_zhifubao"
+            android:layout_toRightOf="@id/center_divider"
+            android:layout_marginLeft="@dimen/x120"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/x27"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f0f0f0"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/balance_charge"
+        android:layout_width="@dimen/login_edit_view_width"
+        android:layout_height="@dimen/x80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x80"
+        android:background="@drawable/selector_red_button"
+        android:gravity="center"
+        android:text="@string/go_to_pay"
+        android:textColor="@color/white_ffffff" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <include layout="@layout/common_charge_notice" />
+    </LinearLayout>
+</LinearLayout>

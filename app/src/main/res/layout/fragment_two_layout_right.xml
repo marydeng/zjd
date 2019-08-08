@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+        <variable
+            name="item"
+            type="poll.com.zjd.model.GoodBean1" />
+
+        <variable
+            name="index"
+            type="int" />
+
+        <variable
+            name="flag"
+            type="String" />
+
+        <variable
+            name="fragment"
+            type="poll.com.zjd.fragment.ClassFragment" />
+
+        <variable
+            name="activity"
+            type="poll.com.zjd.activity.BaseActivity" />
+
+        <import type="android.view.View" />
+        <import type="android.text.Html" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:onClick="@{(view)->fragment.toProductDetail(view,item)}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x220"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/x20">
+
+                <ImageView
+                    android:id="@+id/right_img"
+                    android:layout_width="@dimen/x180"
+                    android:layout_height="@dimen/x180"
+                    android:layout_gravity="center"
+                    android:src="@drawable/default_img"
+                    app:imageUrl='@{item.image}'/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/x20">
+
+                    <TextView
+                        style="@style/style_default_text"
+                        android:text="@{item.prodName}"
+                        tools:text="美酒"
+                        android:textColor="@{item.inventory > 0 ? @color/gray_333333 : @color/gray_999999}"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/style_default_text"
+                            android:textColor="@{item.inventory > 0 ? @color/red_e51728 : @color/gray_999999}"
+                            android:text="@{String.valueOf(item.proStr)}"
+                            tools:text="8888"/>
+                        <TextView
+                            style="@style/style_default_text"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:textColor="@color/gray_999999"
+                            android:text="@{Html.fromHtml(item.pubStr)}"
+                            tools:text="￥9999"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_margin="@dimen/x10"
+                android:visibility="@{item.kill? View.VISIBLE : View.GONE}"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x50"
+                android:src="@drawable/seckill"/>
+
+            <ImageView
+                android:layout_width="@dimen/x110"
+                android:layout_height="@dimen/x110"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x30"
+                android:visibility="@{item.inventory > 0 ? View.GONE : View.VISIBLE}"
+                android:src="@drawable/sell_out" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x218"
+                android:background="@{item.inventory > 0 ? @color/trans_black_0 : @color/trans_black_5}"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

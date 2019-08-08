@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="@dimen/x150"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/frg_two_typeList"
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent"
+                android:divider="@color/black_bg"
+                android:dividerHeight="@dimen/x1"
+                android:scrollbars="none">
+            </ListView>
+            <ListView
+                android:id="@+id/frg_two_typeBrand"
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent"
+                android:divider="@color/black_bg"
+                android:dividerHeight="@dimen/x1"
+                android:visibility="gone"
+                android:scrollbars="none">
+            </ListView>
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/frg_two_productList"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_height="match_parent"
+            android:divider="@color/black_bg"
+            android:dividerHeight="@dimen/x1">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

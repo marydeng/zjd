@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/location_RV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x122"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x50"
+            android:layout_gravity="center"
+            android:src="@drawable/location"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="@dimen/x20"
+                android:id="@+id/location_search_text"
+                style="@style/style_default_text"
+                android:layout_marginRight="@dimen/x80"
+                android:layout_marginLeft="@dimen/x20"
+                android:maxLines="1"
+                android:textSize="@dimen/x28"
+                android:text="花园城购物中心"/>
+
+            <TextView
+                android:id="@+id/location_bd_text"
+                style="@style/style_default_text"
+                android:layout_marginRight="@dimen/x80"
+                android:layout_marginLeft="@dimen/x20"
+                android:maxLines="1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/x20"
+                android:textColor="@color/gray_999999"
+                android:text="广东省深圳市南山区南海大道1090号"/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    
+
+
+</RelativeLayout>

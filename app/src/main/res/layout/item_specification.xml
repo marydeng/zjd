@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+    <TextView
+        android:id="@+id/specification_item_txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x89"
+        android:textSize="@dimen/x26"
+        android:textColor="@color/gray_333333"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:text="规格：1瓶"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line" />
+</LinearLayout>
